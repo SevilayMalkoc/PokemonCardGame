@@ -1,0 +1,48 @@
+<html><head>
+  <SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'pokemon-card-game.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0icG9rZW1vbi1jYXJkLWdhbWUuam5scCI+DQogIDxpbmZvcm1hdGlvbj4NCiAgICA8dGl0bGU+cG9rZW1vbi1jYXJkLWdhbWU8L3RpdGxlPg0KICAgIDx2ZW5kb3I+dXNlcjwvdmVuZG9yPg0KICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4NCiAgICA8b2ZmbGluZS1hbGxvd2VkLz4NCiAgPC9pbmZvcm1hdGlvbj4NCiAgPHJlc291cmNlcz4NCiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJsaWJcQWJzb2x1dGVMYXlvdXQuamFyIiBzaXplPSIyOTAzIiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcYmVhbnNiaW5kaW5nLTEuMi4xLmphciIgc2l6ZT0iNjMxMjg5IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJwb2tlbW9uLWNhcmQtZ2FtZS5qYXIiIHNpemU9Ijg3OTMyMCIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICA8L3Jlc291cmNlcz4NCiAgPGFwcGxpY2F0aW9uLWRlc2MgbWFpbi1jbGFzcz0icG9rZW1vbi5jYXJkLmdhbWUuUG9rZW1vbkNhcmRHYW1lIiAgbmFtZT0icG9rZW1vbi1jYXJkLWdhbWUiID4NCiAgPC9hcHBsaWNhdGlvbi1kZXNjPg0KICA8dXBkYXRlIGNoZWNrPSJhbHdheXMiLz4NCjwvam5scD4NCg=='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedpokemon.card.game() {
+        dtjava.embed(
+            {
+                id : 'pokemon.card.game',
+                toolkit : 'swing',
+                url : 'pokemon-card-game_browser.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0icG9rZW1vbi1jYXJkLWdhbWVfYnJvd3Nlci5qbmxwIj4NCiAgPGluZm9ybWF0aW9uPg0KICAgIDx0aXRsZT5wb2tlbW9uLWNhcmQtZ2FtZTwvdGl0bGU+DQogICAgPHZlbmRvcj51c2VyPC92ZW5kb3I+DQogICAgPGRlc2NyaXB0aW9uPm51bGw8L2Rlc2NyaXB0aW9uPg0KICAgIDxvZmZsaW5lLWFsbG93ZWQvPg0KICA8L2luZm9ybWF0aW9uPg0KICA8cmVzb3VyY2VzPg0KICAgIDxqMnNlIHZlcnNpb249IjEuNisiIGhyZWY9Imh0dHA6Ly9qYXZhLnN1bi5jb20vcHJvZHVjdHMvYXV0b2RsL2oyc2UiLz4NCiAgICA8amFyIGhyZWY9ImxpYlxBYnNvbHV0ZUxheW91dC5qYXIiIHNpemU9IjI5MDMiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxiZWFuc2JpbmRpbmctMS4yLjEuamFyIiBzaXplPSI2MzEyODkiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9InBva2Vtb24tY2FyZC1nYW1lLmphciIgc2l6ZT0iODc5MzIwIiBkb3dubG9hZD0iZWFnZXIiIC8+DQogIDwvcmVzb3VyY2VzPg0KICA8YXBwbGV0LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJwb2tlbW9uLmNhcmQuZ2FtZS5Qb2tlbW9uQ2FyZEdhbWUiICBuYW1lPSJwb2tlbW9uLWNhcmQtZ2FtZSIgPg0KICA8L2FwcGxldC1kZXNjPg0KICA8dXBkYXRlIGNoZWNrPSJhbHdheXMiLz4NCjwvam5scD4NCg=='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {
+                onGetSplash : function() {}
+            }
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedpokemon.card.game);
+</script>
+
+</head><body>
+<h2>Test page for <b>pokemon-card-game</b></h2>
+  <b>Webstart:</b> <a href='pokemon-card-game.jnlp' onclick="return launchApplication('pokemon-card-game.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>
